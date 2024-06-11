@@ -1,0 +1,68 @@
+/* form is a flexbox that goes in the column direction
+   it centers all of its elements vertically and has
+   padding on all sides at 5%
+   All items in it have a gap of 15px
+*/
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5% 20% 0 20%;
+  gap: 15px
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  height: 40px;
+  /* Left padding of 15px for placeholder text */
+  padding: 0 0 0 15px;
+  font-size: large;
+}
+
+div.two-inline-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+div.two-inline-inputs input{
+  flex: 1;
+}
+
+.tac-container {
+  display: flex;
+  align-items: center;
+}
+
+span.tac-radio-container {
+  width: 35%;
+  align-items: center;
+}
+
+span.agreement-message {
+  align-self: flex-end;
+  text-align: right;
+  width: 100%;
+
+}
+
+div.two-inline-buttons{
+  display: flex;
+  gap: 10px;
+}
+
+#register-button {
+  background-color: rgb(38, 114, 237);
+  color: white;
+  height: 45px;
+  flex: 1;
+}
+
+#sign-in-button {
+  background-color: rgb(86, 186, 50);
+  color: white;
+  height: 45px;
+  flex: 1
+}
