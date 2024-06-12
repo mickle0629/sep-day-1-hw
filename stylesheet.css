@@ -20,15 +20,17 @@ input {
   /* Left padding of 15px for placeholder text */
   padding: 0 0 0 15px;
   font-size: large;
+  border-radius: 5px;
 }
 
-div.two-inline-inputs {
+div.two-inline-inputs, div.two-inline-buttons {
   display: flex;
   gap: 10px;
 }
 
 div.two-inline-inputs input{
-  flex: 1;
+  display: flex;
+  flex-grow: 1;
 }
 
 .tac-container {
@@ -36,33 +38,42 @@ div.two-inline-inputs input{
   align-items: center;
 }
 
-span.tac-radio-container {
+label.tac-radio-container {
+  display: flex;
   width: 35%;
   align-items: center;
+  gap: 3px;
 }
 
 span.agreement-message {
   align-self: flex-end;
   text-align: right;
   width: 100%;
-
 }
 
-div.two-inline-buttons{
-  display: flex;
-  gap: 10px;
+b.mini-register-button {
+  background-color: rgb(38, 114, 237);
+  color: white;
+  padding: 2px 7px 2px 7px;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #register-button {
   background-color: rgb(38, 114, 237);
   color: white;
-  height: 45px;
+  height: 60px;
   flex: 1;
+  border-radius: 10px;
+  font-size: large;
 }
 
 #sign-in-button {
   background-color: rgb(86, 186, 50);
   color: white;
-  height: 45px;
-  flex: 1
+  height: 60;
+  flex: 1;
+  border-radius: 10px;
+  font-size: large;
 }

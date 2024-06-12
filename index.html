@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
+    <!-- form element set to use flex layout. Each row is indicated by whitespace -->
     <form>
       <h1>Sign Up</h1>
 
@@ -31,11 +32,11 @@
       </div>
       
       <div class="tac-container">
-        <span class="tac-radio-container">
-          <input type="checkbox" id="tac-radio"/>
-          <label for="tac-radio">I Agree</label>
-        </span>
-        <span class="agreement-message">By clicking Register, you agree to the Terms and Conditions set out by this site, including our Cookie Use</span>
+        <label class="tac-radio-container" for="tac-radio">
+          <input id="tac-radio" type="checkbox"/>
+          I Agree
+        </label>
+        <span class="agreement-message">By clicking <b class="mini-register-button">Register</b>, you agree to the <a href="">Terms and Conditions</a> set out by this site, including our Cookie Use</span>
       </div>
       
       <div class="two-inline-buttons">
