@@ -30,7 +30,8 @@ div.two-inline-inputs, div.two-inline-buttons {
 
 div.two-inline-inputs input{
   display: flex;
-  flex-grow: 1;
+  /* flex-grow applies to a selector that affects two input tags in the div, meaning "both tags grow at the same proportions as each other. */
+  flex-grow: 1; 
 }
 
 .tac-container {
